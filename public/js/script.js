@@ -9,8 +9,12 @@ btn_list.addEventListener("click",(e)=>{
         //^^Add element
         //? create li
         let li = document.createElement("li");
-        li.innerHTML = input.value;
         list.appendChild(li);
+        li.setAttribute("class", "tkharbi9a")
+        //? create p
+        let p = document.createElement("p");
+        p.textContent = input.value;
+        li.appendChild(p);
         //? create icon
         let icon = document.createElement("i");
         icon.innerHTML = '<i class="fa-solid verif fa-circle" style="color: #51aa08;"></i> <i class="fa-solid update fa-pen-to-square"></i>';
@@ -45,7 +49,8 @@ document.addEventListener("click", e =>{
 //^^Update Element
 document.addEventListener("click", e =>{
     if (e.target.className.includes("update")) {
-        // console.log(e.target);
-        e.target.parentElement.parentElement.classList.toggle("green");
+        e.target.parentElement.parentElement.classList.toggle("edit");
+        let pro = prompt("jjdheModifier la valeur :");
+        e.target.parentElement.previousElementSibling.textContent = pro;
     }
 })

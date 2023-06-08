@@ -80,6 +80,11 @@ ul li span {
 }
 
 .edit {
-    color: blue;
+    background-color: blue;
     cursor: pointer;
+}
+
+.tkharbi9a{
+    display: flex;
+    
 }
