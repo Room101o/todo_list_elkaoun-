@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* text-align: center; */
+    background-color: rgb(200, 159, 200);
+}
+header{
+    padding-left:10% ;
+    padding-right: 10%;
+    margin-top: 1%;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+span{
+    color: blueviolet;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    
+}
+.navBar a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    color: #4CAF50;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+/** todo 1**/
+
