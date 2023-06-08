@@ -1,48 +1,85 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body {
-    /* text-align: center; */
-    background-color: rgb(200, 159, 200);
-}
-header{
-    padding-left:10% ;
-    padding-right: 10%;
-    margin-top: 1%;
-}
-.content{
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(65deg, rgba(181,41,231) , rgba(255,164,238,1) , rgba(216,43,43) );
     display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-
-}
-
-.logo{
-    font-size: 30px;
-    font-weight: 700;
-}
-
-span{
-    color: blueviolet;
-}
-.navBar{
-    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+h1{
+    color: white;
+    margin-top: 100px;
+}
+form{
+    margin-top: 50px;
+    background: #fff;
+    box-shadow: -3px 6px 4px #222;
+}
+form input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+form button{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background: teal;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.container{
+    margin-top: 50px;
+
+}
+ul{
+    list-style: none;
+    width: 500px;
+}
+ul li {
+    width: 100%;
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    box-shadow: -3px 6px 4px #222;
+}
+ul li span {
+    top: 0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    color: #e00;
+    font-size: 20px;
+    font-weight: bold;
     
 }
-.navBar a{
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    color: #4CAF50;
-    font-size: 16px;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-between;
+/* ul li i ,span{
+    position: relative;
+    top: 0%;
+    left: 70%;
+    margin-left: 7px;
+    
+} */
+
+/****/
+.green {
+    background-color: green;
 }
 
-/** todo 1**/
-
+.edit {
+    color: blue;
+    cursor: pointer;
+}
