@@ -11,21 +11,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+
     <h1>Adding and Removing Lists</h1>
     <form action="">
         <input type="text" class="input" required>
-        <button type="submit" class="btn_list">
+        <button type="submit"  class="btn_list">
             <i class="fa-solid fa-plus"></i>
         </button>
     </form>
-    <div class="container">
-        <ul>
+    <select class="select" onchange="change(this)">
+        <option value="todo">To do</option>
+        <option value="doing">In progress</option>
+        <option value="done">Ended</option>
+    </select>
 
+    <div class="columns container">
+        <ul class="column" id="todoColumn">
+          <h2>To do</h2>
+        </ul>
+        <ul class="column" id="doingColumn">
+          <h2>In progress</h2>
+        </ul>
+        <ul class="column" id="doneColumn">
+          <h2>Ended</h2>
         </ul>
     </div>
 
-   
+
+
     <script src="../public/js/script.js"></script>
 </body>
 </html>

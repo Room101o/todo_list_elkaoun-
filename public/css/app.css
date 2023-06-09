@@ -10,7 +10,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/* todo 1*/
 h1{
     color: white;
     margin-top: 100px;
@@ -66,6 +68,20 @@ ul li span {
     font-weight: bold;
     
 }
+.logo{
+    margin-top: 40%;
+}
+.navBar button {
+    margin-top: 5%;
+    margin-left: 8%;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
 /* ul li i ,span{
     position: relative;
     top: 0%;
@@ -73,7 +89,17 @@ ul li span {
     margin-left: 7px;
     
 } */
-
+.navBar button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+}
+button a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
 /****/
 .green {
     background-color: green;
@@ -86,5 +112,27 @@ ul li span {
 
 .tkharbi9a{
     display: flex;
-    
+
 }
+
+/* todo 2*/
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+  margin-top: 20px;
+}
+
+.column {
+    width: 200px;
+  border: 1px solid black;
+  padding: 10px;
+    
+  }
+  .select{
+    margin-top: 4%;
+    font-size: 22px;
+    outline: none;
+    border: none;
+    color: #222;
+  }

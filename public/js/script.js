@@ -1,3 +1,4 @@
+//todo liste number 1
 //! Declaration variables 
 let input = document.querySelector(".input");
 let btn_list = document.querySelector(".btn_list");
@@ -17,13 +18,22 @@ btn_list.addEventListener("click",(e)=>{
         li.appendChild(p);
         //? create icon
         let icon = document.createElement("i");
-        icon.innerHTML = '<i class="fa-solid verif fa-circle" style="color: #51aa08;"></i> <i class="fa-solid update fa-pen-to-square"></i>';
-        
+        icon.innerHTML = '<i class="fa-solid verif fa-check" value="done" style="color: #42f312;"></i> <i class="fa-solid update fa-pen-to-square" ></i>';    
         li.appendChild(icon);
+        icon.style.display="flex";
+        icon.style.flexDirection ="row";
+        icon.style.gap ="50px";
+        icon.style.alignItems ="center";
         //? create span
         let spane = document.createElement("span");
         spane.innerHTML = "x";
         li.appendChild(spane);
+        spane.style.display="flex";
+        spane.style.justifyContent ="50px";
+        spane.style.alignItems ="center";
+
+       
+
     }
 
     //^^Remove element
@@ -53,4 +63,13 @@ document.addEventListener("click", e =>{
         let pro = prompt("jjdheModifier la valeur :");
         e.target.parentElement.previousElementSibling.textContent = pro;
     }
+})
+
+//todo liste number 2
+//^^Function changeStatus
+document.addEventListener("click", change=(element) =>{
+
+
+
+
 })
