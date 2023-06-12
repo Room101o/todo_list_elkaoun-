@@ -66,10 +66,28 @@ document.addEventListener("click", e =>{
 })
 
 //todo liste number 2
-//^^Function changeStatus
-document.addEventListener("click", change=(element) =>{
+//!Function changeStatus
+//^^Crée un menu déroulant (select)
+let moveSelect = document.createElement("select");
+let columnIds = ["afaire", "en_cours", "termine"];
+let columnNames = ["A faire", "En cours", "Terminé"];
+for (let i = 0; i < columnIds.length; i++) {
+  let option = document.createElement("option");
+  option.value = columnIds[i];
+  option.text = columnNames[i];
+  moveSelect.appendChild(option);
+}
+document.body.appendChild(moveSelect);
 
+// Déplacer les éléments
+// Déplacer les éléments
+// Déplacer les éléments
+moveSelect.addEventListener("change", function() {
+    let selectedColumnId = moveSelect.value;
+    let selectedColumn = document.getElementById(selectedColumnId);
+    let task = this.parentElement.parentElement;
+    let columnList = selectedColumn.querySelector("ul");
+    columnList.appendChild(task);
+  });
+  
 
-
-
-})
